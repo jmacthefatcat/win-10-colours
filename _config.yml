@@ -1,0 +1,7 @@
+---
+title: windows-10-colours
+timezone: America/Toronto
+
+collections:
+  colours:
+    output: false

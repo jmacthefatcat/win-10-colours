@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<main class="container">
+  <section class="drawer center-center">
+
+    {% assign items = site.colours | sort: 'order' %}
+    {% for colour in items %}
+    <div class="box-90 center-center colour-box" style="background-color: #{{ colour.hex }};">
+      <div class="box text-center"><b>#{{ colour.hex }}</b><br><i>{{ colour.name }}</i></div>
+    </div>
+    {% endfor %}
+
+  </section>
+</main>
