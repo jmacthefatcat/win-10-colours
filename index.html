@@ -2,13 +2,15 @@
 layout: default
 ---
 
-<main class="container">
-  <section class="drawer horizontal-center">
+<main class="container p-l">
+  <section class="row horizontal-center">
 
     {% assign items = site.colours | sort: 'order' %}
     {% for colour in items %}
-    <div class="box-90 center-center colour-box" style="background-color: #{{ colour.hex }};">
-      <div class="box text-center"><b>#{{ colour.hex }}</b><br><i>{{ colour.name }}</i></div>
+    <div class="col-10 center-center flex-col colour-box p-xxl" style="background-color: #{{ colour.hex }};">
+      <span class="font-heavy uppercase text-m">#{{ colour.hex }}</span>
+      <br />
+      <span class="text-s uppercase bold">{{ colour.name }}</span>
     </div>
     {% endfor %}
 
